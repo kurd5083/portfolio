@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.links {
+    padding: 0;
+}
+
+.links ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.links ul li{
+    font-size: 24px;
+    display: inline-block;
+}
+
+.links ul li a{
+    text-decoration: none;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 120px auto;
+    display: flex;
+}
+.contant {
+    width: 60%;
+    margin-right: 50px;
+}
+.contant h1 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 70px;
+    color: #4f4f4f;
+}
+.contant p {
+    font-size: 20px;
+    color: #4f4f4f;
+}
