@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #4f4f4f;
 }
 
@@ -13,13 +13,13 @@ header {
     border-bottom: 1px solid #000;
     background-color: #fff;
     z-index: 5;
+    display: flex;
+    justify-content: center;
 }
 
 .links {
     box-sizing: border-box;
-    position: relative;
-    left: calc(50% - 600px);
-    padding: 10px 20px;
+    padding: 20px 20px;
     max-width: 1200px;
     width: 100%;
 }
@@ -49,27 +49,23 @@ main {
     width: 100%;
     margin: auto;
     margin-top: 180px;
-    display: flex;
-    flex-direction: column;
 }
-
 .b {
     display: flex;
 }
-
 .contant {
     width: 60%;
-    margin-right: 50px;
+    margin-right: 5%;
 }
 
 .contant h1 {
     margin-top: 0;
     text-transform: uppercase;
-    font-size: 70px;
+    font-size: 68px;
 }
 
 .a {
-    width: 40%;
+    width: 35%;
 }
 
 .btn-block {
@@ -163,17 +159,18 @@ main {
 .card-7 {
     background-color: #b59f5b;
 }
+
 .card:hover{
     background-color: #000;
-}
-
-.logo {
-    color: #fff;
 }
 
 .card:hover .logo {
     color: #e0f416;
     transition: all 1s ease-in-out;
+}
+
+.logo {
+    color: #fff;
 }
 
 .name {
@@ -207,74 +204,89 @@ main {
 
 .card h3 {
     position: absolute;
+    box-sizing: border-box;
     margin: 0;
     top: 120px;
     text-transform: uppercase;
     font-size: 80px;
     z-index: 0;
-    margin: 20px;
     text-align: center;
+    line-height: 1;
+    padding: 20px;
 }
 
-.card-5 h3, .card-7 h3 {
-    top: 100px;
-}
 
 .card-6 h3, .card-5 h3, .card-7 h3 {
     font-size: 60px;
 }
 
 .card h4 {
-    box-sizing: border-box;
-    padding: 10px;
     margin: 0;
     font-size: 20px;
     font-weight: 100;
 }
 
+.links-list {
+    display: none;
+}
+
+.links-list span{
+   width: 30px;
+   height: 5px;
+   margin-bottom: 3px;
+   background-color: #000;
+}
+
 @media(max-width: 1500px){
+    .links {
+        max-width: 1000px;
+    }
+    main {
+        max-width: 1000px;
+    }
     .card {
         width: 50%;
         height: 500px;
     }
-
+    .contant {
+        margin-right: 0;
+    }
+    .a {
+        width: 40%;
+    }
+    .my-works {
+        max-width: 1500px;
+    }
     .card h3 {
         top: 160px;
     }
 
-    .card-5 h3 {
-        top: 110px;
-    }
     .card h4 {
-        font-size: 30px;
+        font-size: 26px;
     }
     
 }
 @media(max-width: 1300px){
     .links {
         max-width: 800px;
-        width: 100%;
-        left: calc(50% - 400px);
-
     }
+    
     main {
         max-width: 800px;
-        width: 100%;
         display: flex;
         flex-direction: column;
     }
-
+    .b {
+        flex-direction: column; 
+    }
     .contant {
         width: 100%;
+        margin-right: 0;
     }
 
     .a {
         width: 100%;
     }
-
-   .b {
-    flex-direction: column;
-   }
 
    .head {
         max-width: 800px;
@@ -283,6 +295,7 @@ main {
     .my-works {
         max-width: 1300px;
     }
+
 }
 
 @media(max-width: 900px){
@@ -306,14 +319,39 @@ main {
    }
 
    .head {
-        max-width: 800px;
+        max-width: 600px;
     }
     
     .my-works {
-        max-width: 800px;
+        max-width: 900px;
         flex-direction: column
     }
     .card {
         width: 100%;
+    }
+}
+@media(max-width: 600px){
+    .links {
+        display: none;
+    }
+
+    .links-list {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        max-width: 600px;
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+        align-items: flex-end;
+    }
+    .contant h1{
+        font-size: 50px;
+    }
+    .name {
+        left: 0;
+    }
+    .card h3 {
+        font-size: 60px;
     }
 }
