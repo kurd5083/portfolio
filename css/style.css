@@ -330,7 +330,7 @@ main {
         width: 100%;
     }
 }
-@media(max-width: 600px){
+@media(max-width: 640px){
     .links {
         display: none;
     }
@@ -339,9 +339,8 @@ main {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        max-width: 600px;
+        max-width: 640px;
         padding: 20px;
-        margin: 0;
         width: 100%;
         align-items: flex-end;
     }
@@ -349,9 +348,10 @@ main {
         font-size: 50px;
     }
     .name {
-        left: 0;
+        left: 20px;
     }
+
     .card h3 {
-        font-size: 60px;
+        font-size: 48px;
     }
 }
